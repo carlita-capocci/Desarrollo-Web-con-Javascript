@@ -1,0 +1,27 @@
+body{
+    
+    font-family: Calibri;
+	padding: 10px 20px;
+	background-color: #fcf79f;
+}
+
+h1 {
+	color: #FFFFFF;
+	background-color: #ffbd33;
+	padding: 10px;
+	border-radius:0 20px;
+}
+
+p{
+	color: #0ca001;
+}
+
+#destacado{
+	font-size: 24px;
+}
+
+h2{
+	font-family: Arial;
+}
+
+
