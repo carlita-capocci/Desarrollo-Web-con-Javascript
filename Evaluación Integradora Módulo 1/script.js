@@ -77,7 +77,8 @@ eleccion.addEventListener('change', (event) => {
 
 
 //Div de personajes
-var divisores= document.getElementsByTagName('div');
+var personajes= document.querySelector('section.personajes');
+var divisores= personajes.getElementsByTagName('div');
 for(var i=0; i<divisores.length; i++){
     var divisor= divisores[i];
     divisor.style.border='1px solid black';
@@ -137,11 +138,43 @@ tresMafaldas.style.width='500px';
 tresMafaldas.style.marginTop='100px';
 
 
+slider(['images/playa.jpeg', 'images/volar.png', 'images/naranja.jpeg'], 'div.slide' );
+
+
+   $('#mundo').on('click',() => {
+    window.open('https://hipertextual.com/2020/10/mafalda-quino-vinetas', '_blank');      
+})
+
+
+$('#sopas').on('click',() => {
+    window.open('https://www.cucinare.tv/2020/09/30/el-dia-que-quino-explico-por-que-mafalda-odia-tanto-la-sopa/', '_blank');      
+})
+
+
+var nom= document.getElementById('nombre');
+var mail= document.getElementById('email');
+var comen= document.getElementById('comentario');
 
 
 
 
+    $('#enviarlo').on('click', ()=>{
+        var errores=[];
+        if(nom.value === ''){
+            errores.push('El campo nombre no puede estar vacío');
+        };
+        if(mail.value === ''){
+            errores.push('El campo email no puede estar vacío');
+        };
+        if(comen.value === ''){
+            errores.push('El campo comentario no puede estar vacío');
+        }
 
-
+        if(!errores.length){
+            alert('Gracias por suscribite!!!');
+        } else{
+            alert(errores.join(' \n \n'))
+        }
+    })
     
 

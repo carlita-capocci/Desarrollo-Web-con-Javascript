@@ -11,33 +11,75 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 
+.slide{
+    margin-right: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 10px;
+}
+
+.mafaldayelglobo1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+
+.mafaldayelglobo{
+    width: 270px;
+    height: 220px;
+    border-radius: 50%;
+    margin: 30px;
+    border: 1px solid black;
+}
+
+.mafaldaylasopa{
+    width: 270px;
+    height: 240px;
+    border-radius: 50%;
+    margin: 30px;
+    border: 1px solid black;
+}
+
+
+.pmundo{
+    cursor: pointer;
+    text-align: center;
+    margin: 5px;
+}
+
+.pmundo:hover{
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: red;
+    text-decoration: underline;
+    
+}
+
 section.personajes div{
     display: none;
 }
 
-@media (max-width: 599px) {  
-   p{
-    width: 300px;
-    margin:20px;
-   }
-
-   .tresMafaldas{
-width: 250px;
-height: 150px;
-   }
-
-   h2, h3{
-    width: 400px;
-    margin:20px;
-   }
-
-
-.navegacion{
-    width: 100%;
-    height: 100px;
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.form2{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 50px;
+}
 
-} 
+.submit{
+    width: 80px;
+    height: 50px;
+}
+
 
 
